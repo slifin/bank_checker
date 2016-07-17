@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booklets</title>
+</head>
+<script type="text/javascript"></script>
+<body>
+
+<a href="javascript:fetch('https://localhost.com/index.js?' + Date.now())
+.then(function(response){
+    return response.text();
+}).then(function(text) {
+    eval(text);
+});">Install local script</a>
+
+
+<a href="javascript:fetch('https://raw.githubusercontent.com/slifin/bank_checker/master/index.js')
+.then(function(response){
+    return response.text();
+}).then(function(text) {
+    eval(text);
+});">
+Install remote script
+</a>
+</body>
+</html>
